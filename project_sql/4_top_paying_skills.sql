@@ -11,7 +11,7 @@ GROUP BY
     skills
 ORDER BY
     avg_salary DESC
-LIMIT 30
+LIMIT 10;
 
 
 /* Here is the breakdown of top paying 30 skills

@@ -44,7 +44,7 @@ ORDER BY
     salary_year_avg DESC
 LIMIT 10;
 ```
-Here's the breakdown of top-paying data analyst roles (2024–2025):
+Here's the breakdown of top-paying data analyst roles in Canada (2024–2025):
 - **Huge Salary Potential:** Salaries range from ~$160K to ~$385K, showing that senior and specialized analytics roles can reach executive-level compensation.
 
 - **Remote & Global Opportunities:** Several jobs are listed as “Anywhere” or across multiple countries, highlighting the rise of remote-friendly high-paying analytics roles.
@@ -95,7 +95,8 @@ Here's the breakdown of skills in top-paying data analyst roles (2024–2025):
 
 - **AI & Visualization Still Matter:** PyTorch, TensorFlow, Tableau, and Looker show that both machine learning and data storytelling are highly valued.
 
-![Top paying skills](assets\top_paying_skills)
+<img width="775" height="345" alt="image" src="https://github.com/user-attachments/assets/84c8d960-a7de-4fb3-8e0e-e7500753c673" />
+
 
 *Bar graph visualizing the count of skills for the top 10 paying jobs for data analysts; ChatGPT generated this graph from my SQL query results*
 

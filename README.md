@@ -1,7 +1,7 @@
 # Introduction
 Welcome to my SQL Portfolio Project, where I dive into the data job market with the focus on Data Analyst roles. In this project I looked at top paying jobs, in-demand skills and their intersection in the Data Analytics field.
 
-🔍Check my SQL queries here:[project_sql folder](project_sql)
+🔍Check my SQL queries here: [project_sql folder](project_sql)
 
 ### The questions I wanted to answer through my SQL queries were:
 
@@ -88,7 +88,8 @@ Here's the breakdown of top-paying data analyst skills in Japan (2023):
 
 - **High-Paying Roles** = Broader Skill Stacks: The ~$105K role includes a wide mix (**SQL, Python, R, Tableau, Looker, SPSS**), showing that higher salaries often require multi-tool versatility.
 
-<img width="428" height="270" alt="image" src="https://github.com/user-attachments/assets/1c43172a-3278-4394-9216-2151c3884c71" />
+<img width="750" height="375" alt="image" src="https://github.com/user-attachments/assets/ca80b9e4-85d3-4d9d-a6f8-516d72085c47" />
+
 
 
 *Bar graph visualizing the count of skills for the top 10 paying jobs for data analysts; ChatGPT generated this graph from my SQL query results*

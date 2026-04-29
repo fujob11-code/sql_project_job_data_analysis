@@ -88,7 +88,8 @@ Here's the breakdown of top-paying data analyst skills in Japan (2023):
 
 - **High-Paying Roles** = Broader Skill Stacks: The ~$105K role includes a wide mix (**SQL, Python, R, Tableau, Looker, SPSS**), showing that higher salaries often require multi-tool versatility.
 
-![Top paying skills](top_paying_skills)
+<img width="428" height="270" alt="image" src="https://github.com/user-attachments/assets/1c43172a-3278-4394-9216-2151c3884c71" />
+
 
 *Bar graph visualizing the count of skills for the top 10 paying jobs for data analysts; ChatGPT generated this graph from my SQL query results*
 

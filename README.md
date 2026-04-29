@@ -1,7 +1,7 @@
 # Introduction
 Welcome to my SQL Portfolio Project, where I dive into the data job market with the focus on Data Analyst roles. In this project I looked at top paying jobs, in-demand skills and their intersection in the Data Analytics field.
 
-🔍Check my SQL queries here:[project_sql folder](project_sql)
+🔍Check my SQL queries here: [project_sql folder](project_sql)
 
 ### The questions I wanted to answer through my SQL queries were:
 

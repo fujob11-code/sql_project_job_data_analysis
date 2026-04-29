@@ -38,19 +38,22 @@ FROM
 LEFT JOIN company_dim ON job_postings_fact.company_id = company_dim.company_id
 WHERE 
     job_title_short = 'Data Analyst' AND
-    job_country = 'Japan' AND
+    job_country = 'Canada' AND
     salary_year_avg IS NOT NULL
 ORDER BY
     salary_year_avg DESC
 LIMIT 10;
 ```
-Here's the breakdown of the top data analyst jobs in Japan (2023):
+Here's the breakdown of top-paying data analyst roles (2024–2025):
+- **Huge Salary Potential:** Salaries range from ~$160K to ~$385K, showing that senior and specialized analytics roles can reach executive-level compensation.
 
-- **Tight Salary Band:** Most roles fall between ~$79K and ~$111K, suggesting a fairly consistent pay range for top analyst positions in this market.
+- **Remote & Global Opportunities:** Several jobs are listed as “Anywhere” or across multiple countries, highlighting the rise of remote-friendly high-paying analytics roles.
 
-- **Big Tech Leads Hiring:** Amazon shows up repeatedly, highlighting how large tech-driven companies dominate high-paying opportunities.
+- **Analytics Is Becoming Specialized:** Titles like Applied Research Engineer, Medical Analytics, and Marketing Data Lead show that companies increasingly want analysts with domain expertise.
 
-- **Shift Toward Specialization:** Titles go beyond “Data Analyst” into areas like Business Intelligence and Consumer Research, signaling a move toward domain-focused roles.
+- **Senior-Level Roles Dominate:** Many top-paying jobs include terms like “Principal,” “Lead,” or “Manager,” suggesting that compensation grows significantly with experience and strategic responsibility.
+
+- **Big Companies Drive Top Salaries:** Companies like Siemens, EY, Pfizer, Atlassian, and Block appear in the dataset, reinforcing that enterprise-scale organizations invest heavily in analytics talent.
 
 ### 2. Skills for Top Paying Jobs
 To understand what skills are required for the top-paying jobs, I joined the job postings with the skills data, providing insights into what employers value for high-compensation roles.
@@ -66,7 +69,7 @@ WITH top_paying_jobs AS(
     LEFT JOIN company_dim ON job_postings_fact.company_id = company_dim.company_id
     WHERE 
         job_title_short = 'Data Analyst' AND
-        job_country = 'Japan' AND
+        job_country = 'Canada' AND
         salary_year_avg IS NOT NULL
     ORDER BY
         salary_year_avg DESC
@@ -82,11 +85,15 @@ INNER JOIN skills_dim ON skills_dim.skill_id = skills_job_dim.skill_id
 ORDER BY
     salary_year_avg DESC;
 ```
-Here's the breakdown of top-paying data analyst skills in Japan (2023):
+Here's the breakdown of skills in top-paying data analyst roles (2024–2025):
 
-- **Core Tools Dominate: SQL, Excel, and Python** appear across multiple roles, confirming they are the foundation skills expected in most data analyst jobs.
+- **Python & SQL Lead the Market:** These remain the most common skills across high-paying analytics roles.
 
-- **High-Paying Roles** = Broader Skill Stacks: The ~$105K role includes a wide mix (**SQL, Python, R, Tableau, Looker, SPSS**), showing that higher salaries often require multi-tool versatility.
+- **Cloud & Data Platforms Dominate:** Tools like Databricks, Snowflake, AWS, Azure, and BigQuery appear frequently, showing the shift toward cloud-based analytics.
+
+- **Analytics Is Becoming More Technical:** Skills such as Spark, Kafka, Kubernetes, and Terraform highlight the growing overlap between analytics and data engineering.
+
+- **AI & Visualization Still Matter:** PyTorch, TensorFlow, Tableau, and Looker show that both machine learning and data storytelling are highly valued.
 
 ![Top paying skills](assets\top_paying_skills)
 
@@ -110,23 +117,23 @@ ORDER BY
     demand_count DESC
 LIMIT 5;
 ```
-Here's the breakdown of most in-demand data analyst skills (2023):
+Here's the breakdown of the most in-demand data analyst skills (2024–2025):
 
-- **SQL** Dominates the Market: With ~92K postings, SQL is by far the most requested skill, making it the core requirement for data analysts.
+- **SQL Remains King:** With nearly 200K postings, SQL continues to be the most essential skill for data analysts.
 
-- **Excel** Still Holds Strong: At ~67K demand, Excel remains a critical tool, especially for business analysis and reporting tasks.
+- **Excel Still Matters:** Despite newer tools, Excel remains heavily requested, especially for reporting and business analysis tasks.
 
-- **Python** as the Go-To Programming Skill: With ~57K postings, Python is the leading programming language, showing strong demand for automation and advanced analytics.
+- **Python Keeps Growing:** Strong demand for Python reflects the increasing need for automation, analytics, and data science capabilities.
 
-- **Visualization Tools** Are Essential: **Tableau (~46K) and Power BI (~39K)** highlight the importance of data storytelling and dashboarding.
+- **BI Tools Are Core Requirements:** Tableau and Power BI both appear in nearly 100K job postings, showing that visualization and dashboarding are now standard expectations.
 
 | Skills   | Demand Count |
 |----------|--------------|
-| SQL      | 92628         |
-| Excel    | 67031        |
-| Python   | 57326        |
-| Tableau  | 46554        |
-| Power BI | 39468        |
+| SQL      | 198761         |
+| Excel    | 144995        |
+| Python   | 128946        |
+| Tableau  | 99062        |
+| Power BI | 94631        |
 
 *Table of the demand for the top 5 skills in data analyst job postings*
 
@@ -148,28 +155,29 @@ ORDER BY
     avg_salary DESC
 LIMIT 30;
 ```
-Here's the breakdown of top-paying data analyst skills (2023):
+Here's the breakdown of the highest-paying data analyst skills (2024–2025):
 
-- **Outliers Skew the Top:** SVN at ~$400K is a major outlier, likely driven by very limited data points, not a realistic benchmark.
+- **Specialized Skills Command Premium Salaries:** Tools like Kotlin, FastAPI, and MXNet show that niche technical expertise often leads to higher compensation.
 
-- **Specialized Skills Command Premiums:** Tools like Solidity, Couchbase, and DataRobot show that niche expertise (blockchain, ML platforms, distributed databases) leads to higher salaries.
+- **AI & ML Skills Pay Well:** Hugging Face and MXNet highlight strong market value for machine learning and AI-related capabilities.
 
-- **Engineering > Analysis** for Pay: Golang, Terraform, and VMware highlight that infrastructure and backend skills are more lucrative than traditional analytics tools.
+- **Cloud & Infrastructure Skills Stay Valuable:** Terraform and DynamoDB continue to appear among top-paying skills, reflecting demand for scalable cloud systems and data infrastructure.
 
-- **ML & Data Science Tools** Pay Well: MXNet and dplyr indicate strong compensation for roles involving statistical modeling and machine learning.
+- **Engineering Skills Outperform Traditional Analytics Tools:** Many top-paying skills are tied more to software engineering and backend development than standard reporting or BI work.
+
 
 | Skills        | Average Salary ($) |
 |---------------|-------------------:|
-| svn       |            400,000 |
-| solidity     |            179,000 |
-| couchbase     |            160,515 |
-| datarobot        |            155,500|
-| golang     |            155,486 |
-| mxnet        |            149,000 |
-| dplyr         |            148,000 |
-| vmware       |            147,500 |
-| terraform        |            146,000 |
-| twilio |            138,000 |
+| kotlin       |            198,500 |
+| fastapi     |            194,000 |
+| svn     |            185,000 |
+| mxnet        |            175,000|
+| hugging face     |            164,000 |
+| blazor        |            161,000 |
+| terraform         |            153,700 |
+| vue.js       |            148,000 |
+| dynamodb        |            142,500 |
+| apl |            140,000 |
 
 *Table of the average salary for the top 10 paying skills for data analysts*
 
@@ -202,32 +210,32 @@ LIMIT 30;
 ```
 
 
-| Skill ID | Skills     | Demand Count | Average Salary ($) |
-|----------|------------|--------------|-------------------:|
-| 8        | go         | 27           |            115,320 |
-| 234      | confluence | 11           |            114,210 |
-| 97       | hadoop     | 22           |            113,193 |
-| 80       | snowflake  | 37           |            112,948 |
-| 74       | azure      | 34           |            111,225 |
-| 77       | bigquery   | 13           |            109,654 |
-| 76       | aws        | 32           |            108,317 |
-| 4        | java       | 17           |            106,906 |
-| 194      | ssis       | 12           |            106,683 |
-| 233      | jira       | 20           |            104,918 |
+| Skill ID | Skills    | Demand Count | Average Salary ($) |
+|----------|-----------|--------------|-------------------:|
+| 0        | sql       | 820          |             99,217 |
+| 1        | python    | 508          |             98,671 |
+| 183      | tableau   | 500          |            100,093 |
+| 184      | excel     | 467          |             87,975 |
+| 2        | r         | 288          |             98,756 |
+| 186      | power bi  | 280          |             91,958 |
+| 185      | looker    | 125          |             93,223 |
+| 194      | sas       | 115          |             93,933 |
+| 73       | snowflake | 78           |            106,715 |
+| 74       | azure     | 72           |             99,153 |
 
-*Table of the most optimal skills for data analyst sorted by salary*
+*optimal skills for data analyst sorted by salary*
 
-Here's the breakdown of in-demand, high-paying data analyst skills (2023):
+Here's the breakdown of the most optimal data analyst skills (high demand + strong salary):
 
-- **Balanced Demand + Salary:** Skills like Snowflake, Azure, and AWS show both strong demand and high salaries, making them some of the most valuable tools to learn.
+- **SQL Dominates in Demand:** SQL leads by a huge margin with 820 postings, making it the most essential skill for analysts.
 
-- **Cloud & Data Platforms Lead:** BigQuery, Snowflake, and Hadoop highlight that modern data platforms and big data tools are central to high-paying roles.
+- **Python & Tableau Offer Strong Balance:** Both skills combine high demand with ~$100K salaries, making them some of the best ROI skills to learn.
 
-- **Engineering Skills Boost Pay:** Go and Java indicate that adding programming/engineering skills increases earning potential beyond typical analyst roles.
+- **Excel Is Highly Requested but Lower Paying:** Excel appears frequently, but its average salary is lower than more technical tools like Python or Snowflake.
 
-- **ETL & Data Pipeline Tools Matter:** SSIS and Hadoop suggest that data pipeline and processing skills are highly valued in the market.
+- **Cloud & Data Platform Skills Pay More:** Snowflake, Oracle, Databricks, and BigQuery offer higher salaries despite lower demand, showing strong value in modern data infrastructure skills.
 
-- **Collaboration Tools Still Relevant:** Jira and Confluence appear despite lower demand, implying that project and workflow tools are common in higher-level or team-based roles.
+- **Specialized Skills Stand Out:** Tools like Go, Jira, Zoom, and Databricks have some of the highest salaries, though demand is much lower.
 
 # What I Learned
 
